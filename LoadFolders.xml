@@ -7,5 +7,6 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5/</li>
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">ModPatches/Vanilla Factions Expanded - Settlers</li>
 	</v1.5>
 </loadFolders>
