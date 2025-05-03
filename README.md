@@ -1,6 +1,9 @@
 ## What mod does
 Allows throwing grenades over walls and tweaks their range depending on user strength.
 
+## Incompatibilities
+Smarter Raider AI https://steamcommunity.com/sharedfiles/filedetails/?id=2945497357
+
 ### Credits
 Originally, by Caulaflower, update by Keshash.
 
