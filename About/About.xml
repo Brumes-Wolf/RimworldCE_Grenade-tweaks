@@ -7,7 +7,22 @@
 		<li>1.4</li>
 		<li>1.5</li>
 	</supportedVersions>
-	<description>Allows throwing grenades over walls and tweaks their range depending on user strength.\n\nOriginally, by Caulaflower, update by Keshash.\n\nThis is a simple reassembly for 1.5 version, no changes made.\nLink to previous v1.4: https://steamcommunity.com/sharedfiles/filedetails/?id=2891608196</description>
+	<description>Allows throwing grenades over walls and tweaks their range depending on user strength.
+	
+Reassembly for 1.5 version.
+Some fixes.
+
+Soft incompatibilities:
+- Smarter Raider AI https://steamcommunity.com/sharedfiles/filedetails/?id=2945497357
+To fix: disable CE Compatibility Performance fix in Smarter Raider AI setting.
+
+Credits:
+Code, original: Caulaflower
+Thumbnail: Chicken Plucker
+1.4 update: Keshash
+Updates: Brumes Wolf
+
+Link to previous v1.4: https://steamcommunity.com/sharedfiles/filedetails/?id=2891608196</description>
 	<modDependencies>
 		<li>
 			<packageId>CETeam.CombatExtended</packageId>

@@ -1,12 +1,17 @@
 ## What mod does
 Allows throwing grenades over walls and tweaks their range depending on user strength.
 
-## Incompatibilities
+Reassembly for 1.5 version.
+Some fixes.
+
+## Soft incompatibilities
 Smarter Raider AI https://steamcommunity.com/sharedfiles/filedetails/?id=2945497357
+To fix: disable CE Compatibility Performance fix in Smarter Raider AI setting.
 
 ### Credits
-Originally, by Caulaflower, update by Keshash.
-
-This is a simple reassembly for 1.5 version, no changes made.
+Code, original: Caulaflower
+Thumbnail: Chicken Plucker
+1.4 update: Keshash
+Updates: Brumes Wolf
 
 Link to previous v1.4: https://steamcommunity.com/sharedfiles/filedetails/?id=2891608196
