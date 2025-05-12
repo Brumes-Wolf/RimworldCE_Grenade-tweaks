@@ -1,30 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!-- Make sure CE grenade parent class has <comps> -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="BaseGrenadeEquipment"]/comps</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="BaseGrenadeEquipment"]</xpath>
-			<value>
-				<comps/>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<!-- Make sure Vanilla grenade parent class has <comps>, in case any mods inherit from here -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="BaseMakeableGrenade"]/comps</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="BaseMakeableGrenade"]</xpath>
-			<value>
-				<comps/>
-			</value>
-		</nomatch>
+	<!-- Add comps to any CE grenades that don't have it by default -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Weapon_GrenadeStickBomb" or defName="Weapon_GrenadeConcussion"]</xpath>
+		<value>
+			<comps/>
+		</value>
 	</Operation>
 	
 	<!-- Now that we know everything should have the comp node, we can add the gizmo -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag" or defName="Weapon_GrenadeEMP" or defName="Weapon_GrenadeMolotov" or defName="Weapon_GrenadeTox" or @Name="BaseGrenadeEquipment" or @Name="BaseMakeableGrenade"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag" or defName="Weapon_GrenadeEMP" or defName="Weapon_GrenadeMolotov" or defName="Weapon_GrenadeTox" or defName="Weapon_GrenadeConcussion" or defName="Weapon_GrenadeFlashbang" or defName="Weapon_GrenadeStickBomb" or defName="Weapon_GrenadeSmoke" or defName="Weapon_GrenadeFirefoam"]/comps</xpath>
 		<value>
 			<li>
 				<compClass>AmogusGrenade.GizmoForNades</compClass>
@@ -34,6 +20,6 @@
 	
 	<!-- Remove the minimum range from the grenades -->
 	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag" or defName="Weapon_GrenadeEMP" or defName="Weapon_GrenadeMolotov" or defName="Weapon_GrenadeTox" or @ParentName="BaseGrenadeEquipment" or @ParentName="BaseMakeableGrenade"]/verbs/li/minRange</xpath>
+		<xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag" or defName="Weapon_GrenadeEMP" or defName="Weapon_GrenadeMolotov" or defName="Weapon_GrenadeTox" or defName="Weapon_GrenadeConcussion" or defName="Weapon_GrenadeFlashbang" or defName="Weapon_GrenadeStickBomb" or defName="Weapon_GrenadeSmoke" or defName="Weapon_GrenadeFirefoam"]/verbs/li/minRange</xpath>
 	</Operation>
 </Patch>
