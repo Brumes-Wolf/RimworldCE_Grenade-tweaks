@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Add gizmo to VWE Non-Lethal Tear Gas Grenade -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_TearGasGrenade"]/comps</xpath>
+		<value>
+			<li>
+				<compClass>AmogusGrenade.GizmoForNades</compClass>
+			</li>
+		</value>
+	</Operation>
+</Patch>
