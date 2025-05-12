@@ -8,5 +8,6 @@
 		<li>/</li>
 		<li>1.5/</li>
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">ModPatches/Vanilla Factions Expanded - Settlers</li>
+		<li IfModActive="VanillaExpanded.VWENL">ModPatches/Vanilla Weapons Expanded - Non-Lethal</li>
 	</v1.5>
 </loadFolders>
